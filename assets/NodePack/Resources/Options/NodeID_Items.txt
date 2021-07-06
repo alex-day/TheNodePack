@@ -1,0 +1,97 @@
+# --------------------------------
+#        Node Utillity Belt
+# --------------------------------
+bolt 199
+crossbow 200
+
+netherIngot 150
+axeNether 151
+hoeNether 152
+pickNether 153
+shovelNether 154
+swordNether 155
+
+obsidianIngot 156
+axeObsidian 157
+hoeObsidian 158
+pickObsidian 159
+shovelObsidian 160
+swordObsidian 161
+
+axeNetherBlaze 247
+hoeNetherBlaze 248
+pickNetherBlaze 249
+shovelNetherBlaze 250
+swordNetherBlaze 251
+
+axeObsidianBlaze 252
+hoeObsidianBlaze 253
+pickObsidianBlaze 254
+shovelObsidianBlaze 255
+swordObsidianBlaze 256
+
+plateNether		201
+helmetNether	202
+legsNether		203
+bootsNether		204
+
+plateObsidian	205
+helmetObsidian	206
+legsObsidian	207
+bootsObsidian	208
+
+mesh			209
+blazeBits		262
+
+# --------------------------------
+#           Node Decor
+# --------------------------------
+
+# --------------------------------
+#         Node Mechanics
+# --------------------------------
+socket 234
+
+# --------------------------------
+#            Node Magic
+# --------------------------------
+shard 164
+gem 165
+
+spawnerStone 180
+spawnerWand 181
+combatStone 182
+combatWand 183
+worldStone 184
+worldWand 185
+playerStone 186
+playerWand 187
+
+# --------------------------------
+#     Node Ancient Structures
+# --------------------------------
+
+# --------------------------------
+#            The NBot
+# --------------------------------
+NBot 260
+NBotControl 261
+
+# --------------------------------
+#         Node Detonators
+# --------------------------------
+ThermalDetonator 257
+SolarDetonator 258
+Nukeulator 259
+
+# --------------------------------
+#        Node Chicken Suit
+# --------------------------------
+chickenPlate 243
+chickenHelmet 244
+chickenLegs 245
+chickenBoots 246
+
+# --------------------------------
+#         Node Clever TNT
+# --------------------------------

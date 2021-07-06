@@ -1,0 +1,527 @@
+# the base length of the tunnel that the CleverTNT will break
+# preffered range: 2 - 16
+Int CleverTNTLength 16
+
+# the base length of the tunnel that the CleverTNT will break
+# preffered range: 2 - 16
+SEQ DetailBlockIDs 6,18,26,27,28,31,32,34,37,38,39,40,50,51,55,59,63,64,65,66,68,69,70,71,72,75,76,77,83,85,86,90,91,92,93,94,96
+
+# Patterns defining the shape that is used for the new TNT block
+# RULES:
+# X = break block
+# O = centre block
+# Anything Else = do not break block
+# 
+# NOTE: it is important that you keep the 'unusedString' values where they are.
+# 
+Pattern fill20x20Stone unusedString
+
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXXXX
+XXXXXXXXXOXXXXXXXXXX
+
+/Define X
+
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 1
+
+/EndDefine
+
+/Define O
+
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 1
+
+/EndDefine
+
+/EndPattern
+
+Pattern fill10x10RandomWool unusedString
+
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXOXXXXX
+
+/Define X
+
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 35
+replacementMeta wiggle(0:15)
+
+/EndDefine
+
+/Define O
+
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 35
+replacementMeta wiggle(0:15)
+
+/EndDefine
+
+/EndPattern
+
+Pattern clear10x10 unusedString
+
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXXXXXXX
+XXXXOXXXXX
+
+/EndPattern
+
+Pattern trainTunnelBig unusedString
+
+ XXXXX 
+GXXXXXG
+XXXOXXX
+XXXTXXX
+ FFFFF
+  FRF
+   F
+
+/Define T
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 27,66,66,66,66,66,66,66,66,66
+/EndDefine
+
+# floor
+/Define F
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 1
+/EndDefine
+
+# glowstone
+/Define G
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 89
+replacementInterval 4
+/EndDefine
+
+# redstone torches
+/Define R
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 76
+replacementMeta 5
+replacementInterval 10
+/EndDefine
+
+/EndPattern
+
+Pattern simpleCorridor unusedString
+
+XXX
+XXX
+XOX
+
+/EndPattern
+
+
+Pattern glowstoneStairsDown unusedString
+
+ XXXXX
+XZZZZZX
+XZZZZZX
+XZZZZZX
+XZYOYZX
+  XXX  
+
+/uOffset -1
+/uMoveInterval 1
+/vOffset 0
+/vMoveInterval 0
+
+/Define X
+
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 4,4,4,89
+
+/EndDefine
+
+/Define Y
+
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 44
+replacementInterval 2
+
+/EndDefine
+
+/Define O
+
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 44
+replacementInterval 2
+
+/EndDefine
+
+/EndPattern
+
+Pattern lavaSheet unusedString
+
+  O
+XXXXX
+
+/Define X
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 10
+/EndDefine
+
+/EndPattern
+
+Pattern breakAllLeaveOres unusedString
+
+XXXXX
+XXXXX
+XXOXX
+XXXXX
+XXXXX
+
+/Define X
+breakableBlocks 1,2,3,8,9,10,11,13,12,24
+chanceToBreak 1.0
+/EndDefine
+
+/EndPattern
+
+Pattern simpleCobbleBridge unusedString
+
+ TXXXT
+ AXOXA
+ BBBBB
+
+/Define X
+chanceToBreak 1.0
+/EndDefine
+
+/Define B
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 4
+/EndDefine
+
+/Define A
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 4
+replacementInterval 2
+/EndDefine
+
+/Define T
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 50
+replacementMeta 0
+replacementInterval 4
+/EndDefine
+
+/EndPattern
+
+
+Pattern simpleBrickWall5H unusedString
+
+ X
+ X
+ X
+ X
+ O
+
+/Define X
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 45
+/EndDefine
+
+/Define O
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 45
+/EndDefine
+
+/EndPattern
+
+Pattern BrickWallWithWindow5H unusedString
+
+ X
+ W
+ W
+ W
+ O
+
+/Define X
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 45
+/EndDefine
+
+/Define O
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 45
+/EndDefine
+
+/Define W
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 45,45,45,102,102,45,45,45
+/EndDefine
+
+/EndPattern
+
+Pattern elaborateBridge unusedString
+
+   GGGG
+ GGXXXXGG
+ GXXXXXXG
+GXXXXXXXXG
+GXXXXXXXXG
+GXXRXORXXG
+GXXRRRRXXG
+ GXXXXXXG
+ GGXXXXGG
+   GGGG
+   
+/Define X
+chanceToBreak 1.0
+/EndDefine
+
+/Define R
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 20
+/EndDefine
+
+/Define G
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 89
+replacementInterval 8
+/EndDefine
+
+/EndPattern
+
+Pattern elaborateTrainTunnel unusedString
+
+   GGG
+ GGXXXGG
+ GXXXXXG
+GXXXOXXXG
+GXXXTXXXG
+GXXXBXXXG
+ GXXRXXG
+ GGXFXGG
+   GGG
+
+/Define X
+chanceToBreak 1.0
+/EndDefine
+
+/Define B
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 1
+/EndDefine
+
+/Define T
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 27,66,66,66,66,66,66,66,66,66,66,66,66,66,66,66
+/EndDefine
+
+# redstone support
+/Define F
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 1
+replacementInterval 16
+/EndDefine
+
+# redstone torches
+/Define R
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 76
+replacementMeta 0
+replacementInterval 16
+/EndDefine
+
+# glowstone
+/Define G
+breakableBlocks ALL
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 89
+replacementInterval 8
+/EndDefine
+
+/EndPattern
+
+Pattern HedgeWall unusedString
+
+LLL
+LLL
+LWL
+LWL
+LOL
+
+/Define L
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 18
+/EndDefine
+
+/Define W
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 17,18,18,18
+/EndDefine
+
+/Define O
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 17,18,18,18
+/EndDefine
+
+/EndPattern
+
+
+Pattern NodePack unusedString
+
+A
+B
+C
+D
+O
+
+/Define A
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 35,0,0,35,0,0,35,35,0,0,35,35,35,0,0,35,35,35,35,0,0,0,35,35,35,0,0,0,35,35,0,0,0,35,35,35,0,35,0,0,35,0,0,0,0,0,0
+replacementMeta 3
+/EndDefine
+
+/Define B
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 35,35,0,35,0,35,0,0,35,0,35,0,0,35,0,35,0,0,0,0,0,0,35,0,0,35,0,35,0,0,35,0,35,0,0,0,0,35,0,35,0,0,0,0,0,0,0
+replacementMeta 3
+/EndDefine
+
+/Define C
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 35,0,35,35,0,35,0,0,35,0,35,0,0,35,0,35,35,35,35,0,0,0,35,35,35,0,0,35,35,35,35,0,35,0,0,0,0,35,35,0,0,0,0,0,0,0,0
+replacementMeta 3
+/EndDefine
+
+/Define D
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 35,0,0,35,0,35,0,0,35,0,35,0,0,35,0,35,0,0,0,0,0,0,35,0,0,0,0,35,0,0,35,0,35,0,0,0,0,35,0,35,0,0,0,0,0,0,0
+replacementMeta 3
+/EndDefine
+
+/Define O
+chanceToBreak 1.0
+replacementChance 1.0
+replacementID 35,0,0,35,0,0,35,35,0,0,35,35,35,0,0,35,35,35,35,0,0,0,35,0,0,0,0,35,0,0,35,0,0,35,35,35,0,35,0,0,35,0,0,0,0,0,0
+replacementMeta 3
+/EndDefine
+
+/EndPattern
+
+
+Pattern breakAllLeaveOresSTAIRS unusedString
+
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXXXXXX
+XXXXOXXXX
+XXXXXXXXX
+
+/uOffset -1
+
+/Define X
+breakableBlocks 1,2,3,8,9,10,11,13,12,24
+chanceToBreak 1.0
+chanceToDrop 0.5
+/EndDefine
+
+/EndPattern
+
+Pattern torchRow unusedString
+
+O
+
+/Define O
+chanceToBreak 1.0
+chanceToDrop 1.0
+replacementChance 1.0
+replacementID 50
+replacementMeta 5
+replacementInterval 4
+/EndDefine
+
+/EndPattern
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,112 @@
+#------------------------------------------------------------
+#
+# Note: It is your responsibillity to keep these values within a nice range.
+#       IF YOU CHOOSE NOT TO IT IS AT YOUR OWN RISK.
+#
+#------------------------------------------------------------
+# Enables the nodePack to print log data.
+# preffered range: true or false
+Boolean enableLog true
+
+
+# --------------------------------
+#        Node Utillity Belt
+# --------------------------------
+
+# Determines if the bounce height is limited when bouncing on
+# Obsidian Ingot Blocks from the Tool Pack mod.
+# preffered range: true or false
+Boolean limitBounceHeight true
+
+# --------------------------------
+#           Node Decor
+# --------------------------------
+
+# --------------------------------
+#         Node Mechanics
+# --------------------------------
+
+# Specifies the max number of blocks of laser bridge can be created by one control.
+# preffered range: 4 - 256
+Int BridgeRange 128
+
+# --------------------------------
+#            Node Magic
+# --------------------------------
+
+# --------------------------------
+#     Node Ancient Structures
+# --------------------------------
+
+# The distance between generated ruins.
+# preffered range: 150 - 500
+Int RuinDistance 150
+
+# The percentage chance that a ruin has of spawning
+# a value of 1.0 will try to spawn ruins every time.
+# a value of 0.0 will never spawn any ruins.
+# preffered range: 0.0 - 1.0
+Float RuinChance 0.35
+
+# Once it has been decided that a ruin will be generated,
+# this is the number of times it will try to place a ruin at that spot.
+# preffered range: 1 - 32
+Int RuinTries 16
+
+# The spread of possible x and z values when trying to place a ruin.
+# For each try the x and z values are varied according to this value.
+# each try: x + random number between 0 and RuinSpread
+# preffered range: 1 - 64
+Int RuinSpread 32
+
+# The maximum radius used when generating a spire.
+# preffered range: 4 - 10
+Int SpireRadius 7
+
+# Every time it is decided a ruin is to be placed
+# another random number between 0.0 and 1.0 is chosen.
+# if that number lies below this value then a spire will spawn instead of a ruin.
+# a value of 1.0 will try to spawn spires every time, no ruins.
+# a value of 0.0 will never spawn any spires, only ruins.
+# if RuinChance is set to 0.0, this value has no effect.
+# preffered range: 0.0 - 1.0
+Float SpireChance 0.5
+
+# A hand-wavy maximum height of the spire.
+# Due to the way spires are generated this is not an exact block value.
+# But just know that bigger values for this number will generally result in higher towers. 
+# And smaller values for this number result in shorter towers.
+# preffered range: 10 - 120
+Int SpireHeight 40
+
+# Every time it is decided a spire is to be placed
+# another random number between 0.0 and 1.0 is chosen.
+# if that number lies below this value then a death spire will spawn instead of a normal spire.
+# a value of 1.0 will try to spawn death spires every time, no normal spires.
+# a value of 0.0 will never spawn any death spires.
+# if spireChance is set to 0.0, this value has no effect.
+# preffered range: 0.0 - 1.0
+Float DeathSpires 0.001
+
+# --------------------------------
+#            The NBot
+# --------------------------------
+# The search radius of the NBots
+# preffered range: 32 - 128
+Int searchRange 64
+
+# --------------------------------
+#         Node Detonators
+# --------------------------------
+
+
+# --------------------------------
+#        Node Chicken Suit
+# --------------------------------
+
+
+# --------------------------------
+#         Node Clever TNT
+# --------------------------------
+
+# Other Clever TNT options & patterns are in a separate file

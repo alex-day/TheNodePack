@@ -1,0 +1,63 @@
+# --------------------------------
+#        Node Utillity Belt
+# --------------------------------
+kimberlite 163
+blazeNest 164
+compacterIdle 165
+compacterActive 166
+
+stairsCompactBlockNether 151
+stairsCompactBlockObsidian 152
+netherBlock 167
+obsidianBlock 168
+
+# --------------------------------
+#           Node Decor
+# --------------------------------
+blockClock 162
+blockFluro 144
+IlluminationTube 161
+
+# --------------------------------
+#         Node Mechanics
+# --------------------------------
+teleporter 140
+
+LaserBridge 159
+LaserBridgeControl 160
+LaserBridgeA 128
+LaserBridgeControlA 129
+LaserBridgeT 130
+LaserBridgeControlT 131
+LaserBridgeD 132
+LaserBridgeControlD 133
+GravLift 134
+GravLiftControl 135
+
+# --------------------------------
+#            Node Magic
+# --------------------------------
+crystal 153
+crystalLarge 154
+
+# --------------------------------
+#     Node Ancient Structures
+# --------------------------------
+runeBlock 169
+
+# --------------------------------
+#            The NBot
+# --------------------------------
+
+# --------------------------------
+#         Node Detonators
+# --------------------------------
+
+# --------------------------------
+#        Node Chicken Suit
+# --------------------------------
+
+# --------------------------------
+#         Node Clever TNT
+# --------------------------------
+cleverTNT 149
